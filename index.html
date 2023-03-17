@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <div class="page">
+    <section class="forms">
+      <article class="form form-login">
+        <header>
+          <h2>Sign in</h2>
+          <p>Welcome back to Acme</p>
+        </header>
+        <form>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ovedfs@correo.com">
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="*******">
+          </div>
+          <div class="form-control">
+            <button class="btn btn-login">Sign in to Acme</button>
+          </div>
+        </form>
+      </article>
+      <article class="form form-payment">
+        <header>
+          <h3>Checkout</h3>
+        </header>
+        <form>
+          <div class="form-control">
+            <label for="card-type">Payment method</label>
+            <select name="card-type" id="card-type">
+              <option value="1">VISA</option>
+              <option value="2">MASTER CARD</option>
+              <option value="3">OTRO</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="card-name">Card name</label>
+            <input type="text" name="card-name" id="card-name" placeholder="Oved Fiso">
+          </div>
+          <div class="form-control">
+            <label for="card-number">Card number</label>
+            <input type="text" name="card-number" id="card-number" placeholder="1234 1234 1234 1234">
+          </div>
+          <div class="form-control card-data">
+            <div class="card-date">
+              <label for="date-expiration">Expiration date</label>
+              <div>
+                <input type="text" name="date-month" id="date-month" placeholder="MM">
+                <input type="text" name="date-year" id="date-year" placeholder="YY">
+              </div>
+            </div>
+            <div class="card-code">
+              <label for="code">CVV Code</label>
+              <input type="text" name="code" id="code" placeholder="000">
+            </div>
+          </div>
+          <div class="form-control card-total">
+            <div class="card-price">
+              <label for="price">Total price:</label>
+              <span>$132.90</span>
+            </div>
+            <div class="card-button">
+              <button class="btn btn-buy">Buy now</button>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
