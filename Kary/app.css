@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Lora:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d5d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lora', serif;
+    color: #555;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.login-card {
+    background-color:#fffcf9;
+    padding: 4em;
+}
+
+.form-group {
+    /* border: 1px solid purple; */
+    padding: 1em 0;
+}
+
+input[type=email],
+input[type=password] {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+label {
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+button {
+    padding: 0.5em 0;
+    border: none;
+}
+
+.btn-signin {
+    background-color: black;
+    color: white;
+}
+
+.btn-signin-google {
+    background-color: inherit;
+    border: 1px solid #ccc;
+}
